@@ -1,0 +1,12 @@
+.site-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    border-top: 1px solid #ddd;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 1rem;
+}

@@ -1,10 +1,8 @@
+import "../styles/header.css";
+
 function Header() {
     return (
         <header className="site-header">
-            <a href="#inicio" className="site-logo">
-                Sara Sánchez
-            </a>
-
             <nav className="site-nav" aria-label="Navegación principal">
                 <a href="#inicio">Inicio</a>
                 <a href="#about">Sobre mi</a>
