@@ -1,4 +1,4 @@
-name: Deploy portfolio to GitHub Pages
+name: Deploy Vite React to GitHub Pages
 
 on:
   push:
@@ -37,7 +37,7 @@ jobs:
         run: npm run build
 
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./dist
 
