@@ -1,11 +1,41 @@
 .site-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1.5rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr auto auto 1fr;
+  align-items: center;
+  column-gap: 4rem;
+  padding: 1.5rem 3rem;
+}
+
+.site-footer p {
+  grid-column: 2;
+  margin: 0;
+  color: var(--color-muted);
 }
 
 .footer-nav {
-    display: flex;
-    gap: 1rem;
+  grid-column: 3;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-copy,
+.footer-link {
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--color-muted);
+}
+
+.footer-link {
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.footer-link:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
 }

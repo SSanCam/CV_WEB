@@ -1,21 +1,32 @@
-
 .site-header {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 3rem;
 }
 
 .site-logo {
+    justify-self: start;
     font-weight: 700;
 }
 
 .site-nav {
+    grid-column: 2;
+    justify-self: center;
     display: flex;
     gap: 1.5rem;
 }
 
 .site-nav a {
-    font-weight: 500;
-    color: #727272;
+  font-weight: 500;
+  color: #727272;
+  padding-bottom: 0.25rem;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.site-nav a:hover {
+  color: var(--color-accent);
+  border-bottom-color: var(--color-accent);
 }
