@@ -2,9 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Legal from "./pages/Legal";
-import About from "./pages/About";
-import Proyects from "./pages/Proyects";
-import Contact from "./pages/Contact";
+import Construction from "./pages/Construction";
 
 const routerBasename =
   import.meta.env.BASE_URL === "/"
@@ -17,9 +15,9 @@ function App() {
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Proyects />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/about" element={<Construction />} />
+          <Route path="/projects" element={<Construction />} />
+          <Route path="/contact" element={<Construction />} />
           <Route path="/legal" element={<Legal />} />
         </Routes>
       </Layout>
