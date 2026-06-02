@@ -6,9 +6,9 @@ function Header() {
     <header className="site-header">
       <nav className="site-nav" aria-label="Navegación principal">
         <Link to="/">Inicio</Link>
-        <Link to="/about">Sobre mí</Link>
-        <Link to="/projects">Proyectos</Link>
-        <Link to="/contact">Contacto</Link>
+        <Link to="/sobre-mi">Sobre mí</Link>
+        <Link to="/proyectos">Proyectos</Link>
+        <Link to="/contacto">Contacto</Link>
       </nav>
     </header>
   );

@@ -1,0 +1,37 @@
+.about-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 300px;
+  align-items: center;
+  gap: var(--spacing-xl);
+  margin-bottom: var(--spacing-xl);
+}
+
+.about-hero-text {
+  max-width: 760px;
+}
+
+.about-logo-wrapper {
+  justify-self: end;
+}
+
+.about-logo {
+  width: 100%;
+  max-width: 300px;
+  opacity: 0.95;
+}
+
+@media (max-width: 900px) {
+  .about-hero {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .about-logo-wrapper {
+    justify-self: center;
+  }
+
+  .about-logo {
+    max-width: 160px;
+  }
+}

@@ -32,17 +32,12 @@
     font-size: 1rem;
 }
 
-.section {
+.home-intro {
     max-width: 900px;
     margin: 0 auto;
 }
 
-.section-title {
-    margin-bottom: var(--spacing-sm);
-    color: var(--color-title);
-}
-
-.section-text {
-    margin: 0 auto var(--spacing-sm);
-    line-height: 1.7;
+.home-intro .page-lead {
+    margin: 0 auto;
+    text-align: center;
 }
