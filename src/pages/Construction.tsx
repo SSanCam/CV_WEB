@@ -1,8 +1,10 @@
 function Construction() {
   return (
     <main>
-      <h1>En construcción</h1>
-      <p>Esta sección estará disponible próximamente.</p>
+      <div className="page-container">
+        <h1 className="page-title">En construcción</h1>
+        <p>Esta sección estará disponible próximamente.</p>
+      </div>
     </main>
   );
 }

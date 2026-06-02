@@ -6,14 +6,17 @@
 
 :root {
   color-scheme: light;
+  --color-bg: #0b2f3a;
+  --color-surface: #f4f1ea;
 
-  --color-bg: #f4f1ea;
-  --color-surface: #ffffff;
-  --color-text: #1f1f1f;
-  --color-title: #111111;
-  --color-muted: #6f6a63;
-  --color-accent: #c46a3a;
-  --color-border: #d8d1c7;
+  --color-text: #f4f1ea;
+  --color-title: #f4f1ea;
+  --color-muted: #c9d2cf;
+
+  --color-primary: #0b2f3a;
+  --color-primary-light: #2f7f95;
+  --color-accent: #b88a2e;
+  --color-border: #2f7f95;
 
   --spacing-sm: 0.75rem;
   --spacing-md: 1.5rem;
@@ -67,7 +70,7 @@ p {
   margin-bottom: var(--spacing-md);
   font-size: clamp(2.4rem, 5vw, 4.2rem);
   line-height: 1;
-  color: var(--color-title);
+  color: var(--color-accent);
 }
 
 .page-lead {
@@ -89,7 +92,7 @@ p {
 }
 
 .info-block {
-  border-top: 1px solid var(--color-border);
+  border-top: 1px solid var(--color-accent);
   padding-top: var(--spacing-md);
 }
 
