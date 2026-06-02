@@ -1,12 +1,12 @@
 import { Helmet } from "react-helmet-async";
-import "../styles/global.css";
 
-const contactEmail = "tu-email@ejemplo.com";
-const whatsappNumber = "34600000000";
+const contactEmail = "sarasanchezcamilleri@gmail.com";
+const whatsappNumber = "34670676745";
 
 const emailSubject = encodeURIComponent("Consulta desde StrayPup Studio");
+
 const emailBody = encodeURIComponent(
-  "Hola Sara,\n\nQuería comentarte una idea para una web:\n\n"
+  "Hola Sara,\n\nQuería comentarte una idea para una web.\n\nTipo de proyecto:\n\nIdea principal:\n\nPlazo aproximado:\n\nGracias."
 );
 
 const whatsappMessage = encodeURIComponent(
@@ -31,33 +31,29 @@ function Contact() {
         />
       </Helmet>
 
-      <section className="contact-page" aria-labelledby="contact-title">
-        <div className="contact-content">
-          <h1 id="contact-title">Hablemos de tu proyecto</h1>
+      <section className="page-container" aria-labelledby="contact-title">
+        <h1 id="contact-title" className="page-title">
+          Hablemos de tu proyecto
+        </h1>
 
-          <p className="contact-lead">
-            Cuéntame qué necesitas, en qué punto está tu idea y qué tipo de web
-            tienes en mente. Puedes escribirme por email o enviarme un mensaje
-            directo por WhatsApp.
-          </p>
+        <p className="page-lead">
+          Cuéntame qué necesitas, en qué punto está tu idea y qué tipo de web tienes en mente. Puedes escribirme por email o enviarme un
+          mensaje directo por WhatsApp.
+        </p>
 
-          <div className="contact-actions" aria-label="Opciones de contacto">
-            <a
-              className="contact-link"
-              href={`mailto:${contactEmail}?subject=${emailSubject}&body=${emailBody}`}
-            >
-              Escribir por email
-            </a>
+        <div className="action-links" aria-label="Opciones de contacto">
+          <a className="action-link" href={`mailto:${contactEmail}?subject=${emailSubject}&body=${emailBody}`}>
+            Escribir por email
+          </a>
 
-            <a
-              className="contact-link"
-              href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Escribir por WhatsApp
-            </a>
-          </div>
+          <a
+            className="action-link"
+            href={`https://wa.me/${whatsappNumber}?text=${whatsappMessage}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Escribir por WhatsApp
+          </a>
         </div>
       </section>
     </>
