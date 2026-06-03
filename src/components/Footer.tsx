@@ -5,7 +5,7 @@ function Footer() {
   return (
     <footer className="site-footer">
       <p className="footer-copy">
-        © 2026 Sara Sánchez Camilleri. Todos los derechos reservados.
+        © 2026 Sara Sánchez Camilleri.
       </p>
 
       <nav className="footer-nav" aria-label="Navegación legal">
