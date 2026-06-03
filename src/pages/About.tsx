@@ -1,6 +1,5 @@
 import { Helmet } from "react-helmet-async";
 import "../styles/about.css";
-import logo from "../assets/Ciri_logo_redondo.png";
 
 function About() {
   return (
@@ -26,10 +25,6 @@ function About() {
               Soy Sara Sánchez Camilleri, desarrolladora web con formación en Desarrollo de Aplicaciones Web y una trayectoria previa
               vinculada al diseño gráfico, las artes visuales y el entorno audiovisual.
             </p>
-          </div>
-
-          <div className="about-logo-wrapper">
-            <img src={logo} alt="Logo de StrayPup Studio" className="about-logo" />
           </div>
         </section>
 

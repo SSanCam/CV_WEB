@@ -31,7 +31,7 @@ function Home() {
             Creamos tu sitio web desde la idea hasta la publicación
           </h2>
 
-          <p className="home-intro-text">
+          <p className="page-lead">
             En StrayPup diseñamos y desarrollamos páginas web claras, funcionales y adaptadas a cada proyecto. Creamos sitios pensados para
             comunicar mejor, cargar rápido, verse bien en cualquier dispositivo y ofrecer una experiencia accesible para todas las personas.
           </p>
