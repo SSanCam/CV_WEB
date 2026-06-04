@@ -1,6 +1,11 @@
 import { Helmet } from "react-helmet-async";
 import "../styles/contact.css";
 import logo from "../assets/Ciri_logo_redondo.png";
+import linkedinIcon from "../assets/logo_linkedin.png";
+import githubIcon from "../assets/github_logo.png";
+
+const linkedinUrl = "https://www.linkedin.com/in/sara-s%C3%A1nchez-camilleri-287931114/";
+const githubUrl = "https://github.com/SSanCam/";
 
 const contactEmail = "tu-email-real";
 const whatsappNumber = "34XXXXXXXXX";
@@ -31,8 +36,8 @@ function Contact() {
             </h1>
 
             <p className="page-lead">
-              No hace falta tenerlo todo cerrado. Puedes escribirme con una idea inicial, una web que quieras mejorar o una referencia visual
-              desde la que empezar.
+              No hace falta tenerlo todo cerrado. Puedes escribirme con una idea inicial, una web que quieras mejorar o una referencia
+              visual desde la que empezar.
             </p>
 
             <div className="action-links contact-actions" aria-label="Opciones de contacto">
@@ -75,6 +80,28 @@ function Contact() {
               <h3>Siguiente paso</h3>
               <p>Reviso lo que necesitas y te respondo para valorar alcance, estructura y próximos pasos.</p>
             </div>
+          </div>
+
+          <div className="contact-social" aria-label="Perfiles profesionales">
+            <a
+              className="contact-social-link"
+              href={linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir perfil de LinkedIn de Sara Sánchez Camilleri">
+              <img src={linkedinIcon} alt="" aria-hidden="true" />
+              <span className="sr-only">LinkedIn</span>
+            </a>
+
+            <a
+              className="contact-social-link"
+              href={githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Abrir perfil de GitHub de Sara Sánchez Camilleri">
+              <img src={githubIcon} alt="" aria-hidden="true" />
+              <span className="sr-only">GitHub</span>
+            </a>
           </div>
         </section>
       </section>

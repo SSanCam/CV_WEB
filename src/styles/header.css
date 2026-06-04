@@ -46,3 +46,17 @@
 .site-nav a:hover::after {
   transform: scaleX(1);
 }
+
+@media (max-width: 600px) {
+  .site-header {
+    padding: 1.25rem 1rem;
+  }
+
+  .site-nav {
+    gap: 1rem;
+  }
+
+  .site-nav a {
+    font-size: 0.85rem;
+  }
+}
